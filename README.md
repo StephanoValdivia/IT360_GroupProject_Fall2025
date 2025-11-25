@@ -64,4 +64,74 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 In digital forensics, investigators must be able to quickly identify hostile network behavior, track system changes over time, and preserve data in readable forensic reports. This tool provides all of these functions in one accessible package.
 
+===========================================================================
+*Setup Instructions
+
+These steps assume a fresh Ubuntu VM with internet access and a user account that has sudo privileges.
+
+1	Update the system and install required packages
+
+-	sudo apt update
+
+-	sudo apt upgrade
+
+-	sudo apt install -y git python3 python3-venv python3-pip iproute2
+
+2	Clone this repository
+
+-	cd ~
+
+-	git clone https://github.com/StephanoValdivia/IT360_GroupProject_Fall2025.git
+
+-	cd IT360_GroupProject_Fall2025/src
+
+3	Create and activate the Python virtual environment
+
+-	python3 -m venv venv
+
+-	source venv/bin/activate
+
+4	Install Python dependencies inside the virtual environment
+
+-	pip install scapy
+
+5	Make the Bash scripts executable
+
+-	chmod +x baseline.sh host_scan.sh security_suite.sh
+
+6	Create the initial system baseline (run once on a “clean” system)
+
+-	sudo ./baseline.sh
+
+This captures SUID/SGID files, listening ports, processes, users, and groups into the baselines folder for later comparison.
+
+7	Start the IT 360 Security Suite controller
+
+-	./security_suite.sh
+
+This opens a simple menu that lets you:
+
+1.	Start the firewall IDS
+
+2.	Stop the firewall IDS
+
+3.	Run a host integrity scan
+
+4.	Run the auto-alert summary
+
+5.	Run a full cycle (scan + alert)
+
+6.	Quit
+
+8.	Future runs
+
+After the first setup, to run the tool again you only need to:
+
+-	cd ~/IT360_GroupProject_Fall2025/src
+
+-	source venv/bin/activate
+
+-	./security_suite.sh
+
+(Run sudo ./baseline.sh again only if you intentionally want to rebuild the baseline.)
 
