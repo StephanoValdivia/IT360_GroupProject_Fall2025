@@ -1,11 +1,11 @@
 # IT360\_GroupProject\_Fall2025
 
-Project Overview 
+*Project Overview 
 
 The IT360 Security Suite is a lightweight security monitoring tool that combines three components: a network intrusion detection system, a host integrity scanner, and an automated alert generator. All three modules are controlled through a single menu-driven interface.
 This project was developed to meet the IT 360 Final Project requirement, which instructs students to create a functioning digital forensics tool and document the full lifecycle from setup through demonstration.
 
-Purpose
+*Purpose
 
 This tool addresses a common digital forensics need: monitoring a system for suspicious activity in real time while also preserving system state for comparison. It provides:
 
@@ -15,9 +15,9 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 - An automated alert generator that summarizes recent network and host activity.
 
-Core Features
+*Core Features
 
-1 Network Firewall IDS (Python)
+1. Network Firewall IDS (Python)
 
 - Detects TCP SYN scan attempts
 
@@ -27,7 +27,7 @@ Core Features
 
 - Logs all events for later review
 
-2 Host Integrity Scanner (Bash)
+2. Host Integrity Scanner (Bash)
 
 - Compares system state to a recorded baseline
 
@@ -41,7 +41,7 @@ Core Features
 
 - Saves timestamped forensic reports
 
-3 Auto-Alert Summary Tool (Python)
+3. Auto-Alert Summary Tool (Python)
 
 - Reads the latest firewall IDS log
 
@@ -49,7 +49,7 @@ Core Features
 
 - Produces a combined summary of anomalies
 
-4 Security Suite Controller (Bash)
+4. Security Suite Controller (Bash)
 
 - Simple menu for running all components
 
@@ -57,7 +57,7 @@ Core Features
 
 - Centralized workflow for ease of use
 
-Why This Matters
+*Why This Matters
 
 In digital forensics, investigators must be able to quickly identify hostile network behavior, track system changes over time, and preserve data in readable forensic reports. This tool provides all of these functions in one accessible package.
 
