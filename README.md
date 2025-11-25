@@ -27,6 +27,7 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 - Logs all events for later review
 
+
 2. Host Integrity Scanner (Bash)
 
 - Compares system state to a recorded baseline
@@ -41,6 +42,7 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 - Saves timestamped forensic reports
 
+
 3. Auto-Alert Summary Tool (Python)
 
 - Reads the latest firewall IDS log
@@ -48,6 +50,7 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 - Reads the latest host integrity scan report
 
 - Produces a combined summary of anomalies
+
 
 4. Security Suite Controller (Bash)
 
