@@ -64,7 +64,8 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 In digital forensics, investigators must be able to quickly identify hostile network behavior, track system changes over time, and preserve data in readable forensic reports. This tool provides all of these functions in one accessible package.
 
-===========================================================================
+====================================
+
 *Setup Instructions
 
 These steps assume a fresh Ubuntu VM with internet access and a user account that has sudo privileges.
