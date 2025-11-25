@@ -17,7 +17,7 @@ This tool addresses a common digital forensics need: monitoring a system for sus
 
 Core Features
 
-1. Network Firewall IDS (Python)
+1 Network Firewall IDS (Python)
 
   •	Detects TCP SYN scan attempts
 
@@ -27,7 +27,7 @@ Core Features
 
   •	Logs all events for later review
 
-2. Host Integrity Scanner (Bash)
+2 Host Integrity Scanner (Bash)
 
   •	Compares system state to a recorded baseline
 
@@ -41,7 +41,7 @@ Core Features
 
   •	Saves timestamped forensic reports
 
-3. Auto-Alert Summary Tool (Python)
+3 Auto-Alert Summary Tool (Python)
 
   •	Reads the latest firewall IDS log
 
@@ -49,7 +49,7 @@ Core Features
 
   •	Produces a combined summary of anomalies
 
-4. Security Suite Controller (Bash)
+4 Security Suite Controller (Bash)
 
   •	Simple menu for running all components
 
