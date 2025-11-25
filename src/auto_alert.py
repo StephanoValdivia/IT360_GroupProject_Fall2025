@@ -10,7 +10,8 @@ from datetime import datetime
 #   - latest host_scan_*.txt (host integrity report)
 # and prints a short, combined summary to the terminal.
 
-LOG_DIR = os.path.expanduser("~/logs")
+BASE_DIR = os.path.dirname(os.path.abspath(_file_))
+LOG_DIR = os.path.join(BASE_DIR, "logs")
 FIREWALL_LOG = os.path.join(LOG_DIR, "group_firewall.log")
 HOST_SCAN_PREFIX = "host_scan_"
 HOST_SCAN_SUFFIX = ".txt"

@@ -6,11 +6,12 @@
 #   - host_scan.sh       (host integrity scan)
 #   - auto_alert.py      (summary report)
 
-FIREWALL_SCRIPT="$HOME/group_firewall.py"
-PYTHON_BIN="$HOME/venv/bin/python3"
-HOST_SCAN_SCRIPT="$HOME/host_scan.sh"
-AUTO_ALERT_SCRIPT="$HOME/auto_alert.py"
-PID_FILE="$HOME/group_firewall.pid"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+FIREWALL_SCRIPT="$BASE_DIR/group_firewall.py"
+PYTHON_BIN="$BASE_DIR/venv/bin/python3"
+HOST_SCAN_SCRIPT="$BASE_DIR/host_scan.sh"
+AUTO_ALERT_SCRIPT="$BASE_DIR/auto_alert.py"
+PID_FILE="$BASE_DIR/group_firewall.pid"
 
 # Helper: ensure required files exist
 
