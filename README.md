@@ -1,6 +1,6 @@
 # IT360\_GroupProject\_Fall2025
 
-Project Overview - IT360 Security Suite
+Project Overview 
 The IT360 Security Suite is a lightweight security monitoring tool that combines three components: a network intrusion detection system, a host integrity scanner, and an automated alert generator. All three modules are controlled through a single menu-driven interface.
 This project was developed to meet the IT 360 Final Project requirement, which instructs students to create a functioning digital forensics tool and document the full lifecycle from setup through demonstration.
 
