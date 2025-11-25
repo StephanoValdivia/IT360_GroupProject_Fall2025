@@ -9,53 +9,53 @@ Purpose
 
 This tool addresses a common digital forensics need: monitoring a system for suspicious activity in real time while also preserving system state for comparison. It provides:
 
-•	A Python-based firewall IDS that detects network scans and blocks hostile IPs.
+  •	A Python-based firewall IDS that detects network scans and blocks hostile IPs.
 
-•	A host integrity scanner that identifies changes to critical system attributes.
+  •	A host integrity scanner that identifies changes to critical system attributes.
 
-•	An automated alert generator that summarizes recent network and host activity.
+  •	An automated alert generator that summarizes recent network and host activity.
 
 Core Features
 
 1. Network Firewall IDS (Python)
 
-•	Detects TCP SYN scan attempts
+  •	Detects TCP SYN scan attempts
 
-•	Tracks per-IP activity
+  • Tracks per-IP activity
 
-•	Automatically blocks malicious IPs using iptables
+  •	Automatically blocks malicious IPs using iptables
 
-•	Logs all events for later review
+  •	Logs all events for later review
 
 2. Host Integrity Scanner (Bash)
 
-•	Compares system state to a recorded baseline
+  •	Compares system state to a recorded baseline
 
-•	Detects new SUID/SGID files
+  •	Detects new SUID/SGID files
 
-•	Detects new listening ports
+  •	Detects new listening ports
 
-•	Detects new or unexpected processes
+  •	Detects new or unexpected processes
 
-•	Detects new or removed users and groups
+  •	Detects new or removed users and groups
 
-•	Saves timestamped forensic reports
+  •	Saves timestamped forensic reports
 
 3. Auto-Alert Summary Tool (Python)
 
-•	Reads the latest firewall IDS log
+  •	Reads the latest firewall IDS log
 
-•	Reads the latest host integrity scan report
+  •	Reads the latest host integrity scan report
 
-•	Produces a combined summary of anomalies
+  •	Produces a combined summary of anomalies
 
 4. Security Suite Controller (Bash)
 
-•	Simple menu for running all components
+  •	Simple menu for running all components
 
-•	Start/stop IDS, run scans, generate alerts
+  •	Start/stop IDS, run scans, generate alerts
 
-•	Centralized workflow for ease of use
+  •	Centralized workflow for ease of use
 
 Why This Matters
 
