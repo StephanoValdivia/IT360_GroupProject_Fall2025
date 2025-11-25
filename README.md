@@ -33,6 +33,7 @@ Core Features
 •	Centralized workflow for ease of use
 
 Why This Matters
+
 In digital forensics, investigators must be able to quickly identify hostile network behavior, track system changes over time, and preserve data in readable forensic reports. This tool provides all of these functions in one accessible package.
 
 
